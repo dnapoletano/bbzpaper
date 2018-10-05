@@ -1,0 +1,9 @@
+bbz_fonll.pdf
+*.aux
+*.log
+*.bbl
+*.blg
+*.out
+*~
+referee.pdf
+.svn
