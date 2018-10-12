@@ -138,7 +138,9 @@ directly
  to recent results obtained in various approximations, and used as a
 proxy 
 to assess and discuss the issues of scale dependence and treatment of heavy
-quarks.
+quarks. We also use our results in order 
+to improve the prediction for the total
+$Z$ production cross-section.
 
 \pagebreak
 
@@ -148,9 +150,10 @@ The production of a $Z$ boson is one of the main standard candles at the LHC,
 and is now measured at the sub-percent level. The main production mode
 is through quark-anti-quark fusion, of which the bottom-initiated contribution
 accounts to ${\cal O}(4\%)$ of the total cross section.
-Being that a small but non negligible fraction of the total cross section,
+This is  a small but non negligible fraction of the total cross
+section, and
 its contribution affects both the normalisation and the shape
-of the kinematic distributions and therefore a precise estimate of the
+of the kinematic distributions.  Therefore a precise estimate of the
 bottom-initiated contribution is important for precision physics, for
 example in the determination of the $W$ mass~\cite{Bagnaschi:2018dnh}.
 This process is thus an ideal test case for matched computations,
@@ -179,9 +182,8 @@ $n_f=5$ in evolution equations for PDFs and in the QCD $\beta$ function.
 
 In matched calculations, both scheme are combined, in such a way that
 the result differs by that of each of the two schemes by terms which
-are sub-leading with respect to the accuracy of either of them. Whereas
-several matching schemes have been proposed and used in the past in
-the context of deep-inelastic (DIS) or hadronic processes, the FONLL scheme,
+are sub-leading with respect to the accuracy of either of them. 
+The FONLL scheme,
 first proposed for  heavy quark production in hadronic
 collisions~\cite{Cacciari:1998it} has the advantage of being
 universally applicable; also, it allows for the matching of
@@ -196,8 +198,78 @@ Refs.~\cite{Forte:2015hba,Forte:2016sja} for the computation of the
 total cross-section for Higgs production in bottom
 quark fusion.
 
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=0.35\textwidth]{ggZbb_t.pdf}
+    \includegraphics[width=0.35\textwidth]{qq_gbb.pdf} 
+    \caption{\label{fig:fusvsfs} Leading-order diagrams for $Zb\bar b$ 
+ production in the four-flavor scheme: bottom fusion (left)
+ and production from the initail state light quark (right).
+    }
+  \end{center}
+\end{figure}
 Here, the methodology of
-Refs.~\cite{Forte:2015hba,Forte:2016sja} is applied to $Z$ production.
+Refs.~\cite{Forte:2015hba,Forte:2016sja} is applied to $Z$
+production. When comparing Higgs to $Z$ production in bottom quark
+fusion some care must be taken in defining exactly which process is
+being considered. 
+Indeed, in the case of Higgs production the bottom fusion
+cross-section can be equivalently viewed as the cross section for
+associate production in conjunction with a pair of $b$ jets, i.e. as the
+$H b\bar b$ cross section. In the case of $Z$ production in the
+four-flavor scheme, on top of the leading-order $Z$ production diagram
+in bottom fusion  there is also a process in the quark-antiquark
+channel which produces the same $Z b\bar b$ final state, but in which
+the $Z$ is radiated by  initial-state  light quarks and there are no
+$b$ quarks in the initial state (see Fig.~\ref{fig:fusvsfs}).
+
+Hence, for $Z$ production, unlike Higgs production, one may consider,
+at least in principle, two distinct processes. The first is $Z$ production
+in bottom fusion, defined as $Z$ production in the case in
+which the coupling of the $Z$ to all quarks but bottom vanishes. In
+this case, only the diagram shown on the left of
+Fig.~\ref{fig:fusvsfs} contributes (as for Higgs production). The
+second is $Z\bar b$ production, defined as the process with a $Z$ and a
+bottom quark-antiquak pair in the final state, in which case both
+diagrams in Fig.~\ref{fig:fusvsfs} contribute. In the sequel we will
+consistently refer to the first definition (the one which is similar
+to Higgs) as $Z$ production in bottom fusion, and to the second (the
+definition based on the final state) as $Zb\bar b$ production.
+
+The possibility of
+separating experimentally the light quark- and gluon-initiated
+contributions of Fig.~\ref{fig:fusvsfs} to $Zb\bar b$ production
+has been discussed in
+Ref.~\cite{Chatrchyan:2013zja}, where it was shown that by choosing
+suitable kinematic variables it is possible to select regions in
+which the light quark contribution is dominant. However, from a theoretical
+point of view, the  $Zb\bar b$ process is problematic because it is not
+infrared and collinear safe if the bottom mass is neglected, and thus
+it is beset by mass singularities in the 5FS. This is due to the fact
+that diagrams in which the bottom quark appears in the final state are
+counted as contributions to the  $Zb\bar b$ process, but virtual corrections in
+which the $b$ quark circulates in loops but is absent from  the final state
+are not, and thus the cancellation of infrared singularities is
+incomplete. In the 4FS this leads to mass-singular contributions
+which are finite, but enhanced by double logs of the heavy quark
+mass. The problem is completely analogous to one which arises when
+definig heavy-quark deep inelastic structure functions, and was
+discussed in that context in Ref.~\cite{Forte:2010ta}, to which the
+reader is referred for a discussion of the way these double logs can
+be resummed. 
+
+Here, we will first focus on the construction of a matched computation
+of the process of $Z$ production in bottom fusion, closely following
+the related case of Higgs production of
+Refs.~\cite{Forte:2015hba,Forte:2016sja}. This will provide us with an
+interesting case study for issues related to scale choice and the
+relevance of matched computations. 
+We will then turn to the use of this result as a means to improve the
+total $Z$ cross-section, and in particular revisit the issue of the
+appropriate inclusion of light-quark initiated contributions to the
+$Zb\bar b$ process.
+
 In the 5FS, the $Z$-production cross section has been known up to
 next-to-next-to leading order
 (NNLO) (i.e. $\order{\alpha_s^2}$) for almost three decades~\cite{Hamberg:1990np} and 
@@ -212,10 +284,11 @@ for exclusive 2-jet final states, neglecting the $b$~quark mass.
 The $b$-quark mass was subsequently fully included in
 Refs.~\cite{FebresCordero:2008ci,Cordero:2009kv}.
 
-
-In this work we combine these two results following the procedure we
+Our first task is thus to use these two results in order to produce a
+matched computation for $Z$ production in bottom fusion,
+following the procedure we
 presented in Refs.~\cite{Forte:2015hba,Forte:2016sja} for the closely
-related case of Higgs production: indeed, the counting of perturbative
+related case of Higgs production. Indeed, the counting of perturbative
 orders for these two processes is the same, and many of the Feynman
 diagrams are identical, with the only replacement of Higgs Yukawa
 couplings with gauge couplings. Following the nomenclature introduced
@@ -232,7 +305,7 @@ details: it can be obtained from it by simply replacing the matrix elements
 for Higgs production with those for gauge boson
 production. Specifically, we have computed the 5FS NNLO 
 cross-section using the 
-code of Ref,~\cite{Maltoni:2005wd}, which we cross-checked both 
+code of Ref.~\cite{Maltoni:2005wd}, which we cross-checked both 
 at LO and NLO against MG5\_aMC@NLO~\cite{Alwall:2014hca}. For the
 massive 4FS LO and NLO we have also used  MG5\_aMC@NLO.
 The construction of the FONLL matched results requires the computation
@@ -281,11 +354,14 @@ the matched calculation, which we will study explicitly.
 The matching condition itself depends on
 the matching scale in such a way that, at any given order,  results
 are  independent of it up to sub-leading corrections. This dependence
-persists in the FONLL matched results, but it is alleviated at
-scales which are not too far from the bottom production threshold,
-where the FONLL results almost reduces to the exact mass-dependent result in
-which the physical threshold is implemented exactly. It reappears at
-high-enough scales, where the FONLL result reduces to the 5FS, and it
+persists in the FONLL matched results, but it is alleviated if the
+scale of the process is  not too far from the bottom production
+threshold, because then
+the FONLL results almost reduces to the exact mass-dependent result in
+which the physical threshold is implemented exactly (as shown
+expicitly e.g. in Ref.~\cite{Forte:2010ta}). It reappears when
+the scale of the process is 
+high enough, in which case  the FONLL result reduces to the 5FS, and it
 only goes away when computing the matching condition to increasingly
 high perturbative order, or by independently parametrising the heavy
 quark PDF (indeed, this is the main motivation for independently
@@ -307,7 +383,8 @@ FONLL.
 Our results are summarised in
 Figs.~\ref{fig:muR_var}-\ref{fig:m_mu_var}, where
 matched results in the FONLL-A and FONLL-B scheme are compared to each
-other and to the 4FS and 5FS scheme computations. Also, in
+other and to the 4FS and 5FS scheme computations. Here and in the
+sequel all results are given for LHC at 13~TeV.  Also, in
 Table~\ref{tab:res}, results for the cross-section in the
 three schemes with two different choices of central scale are
 collected, with uncertainties obtained from
@@ -330,11 +407,15 @@ and leads
 to faster perturbative convergence. With this scale choice clearly the
 4FS and 5FS are generally in better agreement.
 
-Furthermore, in the case of our
-preferred FONLL-B result, scale variation is performed in each case in
-two different ways which differ by sub-leading terms, and the result is
-shown as a band between these two choices with the central prediction
-constructed as the  mid-point. The two possibilities correspond to the
+Because we extend the plots down to very low values of the
+renormalization and factorization scales, for the preferred 
+and most accurate  FONLL-B case,
+we also provide an estimate
+of the ambiguity of the scale-varied result, in order to be able to
+assess whether and when the whole procedure becomes unreliable. This is done by
+performing scale variation in
+two different ways which differ by sub-leading terms. 
+The two possibilities correspond to the
 observation (see e.g.~\cite{Altarelli:2008aj})
 that scale variation by a factor $k$ 
 of a quantity $F(\mu)$ which is scale-independent up to NLO but has a
@@ -350,11 +431,20 @@ or
 where the first term on the r.h.s. is computed up to NLO, while the
 second term may be computed up to LO, and thus the two expressions
 differ by NNLO terms (and similarly for higher orders). The two
-options define the two extremes of the band. The width of the band can
-be viewed as the ambiguity, i.e. the scale uncertainty,
+options Eq.s~(\ref{eq:scalup}-\ref{eq:scaldown}) essentially correspond to
+changing the sign of the scale-variation terms, i.e., they amount to
+symmetrizing the scale variation: therefore, they are taken as the two
+extremes of a band which provides an estimate of the 
+uncertainty
 on the scale uncertainty itself.
 Finally, matching scale variation is performed by varying it between the
-default $\mu_b=m_b$ and $\mu_b=2m_b$.
+default $\mu_b=m_b$ and $\mu_b=2m_b$. When  $\mu_b=2m_b$, only results
+for the choice Eq.~\ref{eq:scalup} of scale variation are shown, but
+we have checked that the effect of varying the  matching scale when
+renormalization and factorizaton scales
+are varied according to  Eq.s~\ref{eq:scaldown} is similar, i.e., the
+whole uncertainty band moves up and down when $\mu_b$ is varied
+without changing shape significantly.
 
 \begin{figure}
   \begin{center}
@@ -406,7 +496,8 @@ default $\mu_b=m_b$ and $\mu_b=2m_b$.
       &  &  &    &        \\
       \hline 
     \end{tabular}
-    \caption{\label{tab:res}Summary of numerical results. Percentage error are
+    \caption{\label{tab:res} Summary of results for the bottom fusion
+      cross-section.  Percentage error are
       obtained  as the envelope of a standard 7-point $\mu_R,\mu_F$
       variation arount the  central
       value $\mu_R=\mu_F=\mu$.}
@@ -468,8 +559,10 @@ Coming now to these qualitative features we note that:
 \item The perturbative expansion is indeed more stable for a lower
   choice of factorisation and renormalisation scale. For very low
   scales $\mu\sim\frac{m_Z}{10}$ the 4FS and 5FS results become
-  similar, but the scale dependence and its uncertainty (i.e. the
-  slope of the curve, and the band about it) become very large.
+  similar, but the scale dependence becomes very large: in fact, the
+  width of the uncertainty band becomes as wide as the scale variation
+  in comparison to central scale choice, meaning that the results
+  become unreliable.
 \item A change of matching scale has essentially the same effect on
   the 5FS and the FONLL results, and it has the effect of moving both
   towards the 45S, though by a moderate amount.
@@ -525,7 +618,9 @@ fixed-order but exact hard matching condition.
       4FS NLO. Results are shown as a function of the renormalisation scale
       for fixed factorisation scale (top) or as a function of the
       factorisation scale for fixed renormalisation scale (bottom), in each
-      case with the fixed scale chosen as $\mu=\frac{(m_Z+2m_b)}{3}$.}
+      case with the fixed scale chosen as
+      $\mu=\frac{(m_Z+2m_b)}{3}$. For the case $\mu_b=2m_b$ only the
+      upper edge of the uncertainty band is shown.}
   \end{center}
 \end{figure}
 
@@ -537,7 +632,7 @@ matching scale, as well as constants and logs in the hard
 coefficient, 
 are treated exactly but to fixed order, while logs of the
 factorisation scale are  resummed to all
-orders, but neglecting constants. 
+orders, but not constants. 
 When the 5FS and the 4FS are matched into FONLL, also 
 mass-suppressed terms, on top of constants
 and logs of the matching scale, are treated
@@ -607,10 +702,12 @@ $\mu_F\lesssim0.2m_Z$ or so.
 Finally, the fact that when increasing the matching scale $\mu_b$ the
 5FS and FONLL-B result decrease and get closer to the 4FS is
 understood as a consequence of the fact that the resummed log becomes
-smaller: clearly, if one were to choose $\mu_b=m_Z\sim 10 m_b$ the 5FS would
-reduce to the 4FS one because the resummed logs then vanish. 
-With the choice  $\mu_b= 2  m_b$ the FONLL and 5FS move towards the
-the 4FS by an accordingly smaller amount.
+smaller: as the matching scale is raised and gets closer to
+the scale of the process the resummed logs become smaller, while the
+fixed order log and constant included in the matching condition remain
+the same. Since only these 
+fixed order contributions are  included in the 4FS, as $\mu_b$ is
+raised the 5FS gets closer to the 4FS.
 
 We can finally discuss, in light of all this, the two related issues
 of choosing the various scales, $\mu_F$, $\mu_R$ and $\mu_b$, and of
@@ -685,26 +782,120 @@ done in Refs.~\cite{Bonvini:2016fgf,deFlorian:2016spz}. This theoretical
 uncertainty can only be removed by parametrising the $b$~PDF, in which
 case it is  traded for a PDF uncertainty.
 
+
+Having 
+ determined the total cross-section for $Z$
+production in bottom quark fusion at the highest available accuracy in
+a matched FONLL scheme, we can use this result in
+order to improve the total $Z$ production cross-section. First, we
+recall that, as already mentioned, there are further contributions
+involving $b$ quarks in the final state to the $Z$ production
+cross-section, but without initial-state bottom in the 5FS,
+specifically at leading order the light-quark initated contribution of
+Fig.~\ref{fig:fusvsfs}. Bottom mass effects in these contributions
+could in priciple also be included in a
+matched scheme. However, the corresponding 4FS contributions are only
+known up to NLO, hence only an FONLL-A computation would be possible,
+instead of the more accurate FONLL-B. Furthermore, also as already
+mentioned, a matched computation including these contributions must be
+performed at the level of the total $Z$ cross-section, rather than
+that for  the $Zb\bar b$ cross-section, because these real emission
+contribution 
+are affected by infrared divergences which cancel against virtual
+correction in which the $b$ quark circulates in loops but there are no
+$b$ quarks in the final state. 
+
+However, we can estimate the size of these contributions and the
+impact of their FONLL improvement by computing
+the leading-order contribution Fig.~\ref{fig:fusvsfs} by removing the
+infrared divergence through  an
+invariant mass cut $m_{b\bar b}\ge \sqrt{2} m_b$. We then get (with the
+low scale choice and all other settings of the previous calculation) a
+contribution $\sigma^{\rm light}_{\rm 5FS}(Zb\bar b)=146.1$~pb from the diagram
+of Fig.~\ref{fig:fusvsfs} in the 5FS. The corresponding 4FS result is 
+$\sigma^{\rm light}_{\rm 4FS}(Zb\bar b)=129.5$~pb, while the massless
+limit of the 4FS result is $\sigma^{\rm light}_{\rm 0}(Zb\bar
+b)=146.1$~pb. It follows that the effect of the FONLL-B improvement
+over a pure 5FS computation of this term is at the level of less that
+1\% of the total cross section of Table~\ref{tab:res}, to be compared
+to the 5\%  impact of the FONLL-B improvement of the gluon fusion
+contribution seen in  Table~\ref{tab:res}. But the very
+definition of this contribution is subject to an ambiguity due to the
+need to introduce a cutoff, which is of the order of the difference
+between the whole contribution in the 5FS 
+and its massless limit, namely, also of
+the same size as the FONLL improvement. Therefore, its FONLL
+improvement appears unnecessary. 
+
+
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=0.45\textwidth]{tot_xs_mz.pdf}
+    \includegraphics[width=0.45\textwidth]{tot_xsmzmb.pdf} 
+    \caption{\label{fig:ztotal}
+The total cross-section for $Z$ production and decay into lepton
+pairs, 
+computed in a pure
+five-flavour scheme, or with the bottom fusion contribution replaced
+by its FONLL-B expression. Results are show for two different choices
+of the renormalization and factorization scale  for the bottom-induced
+contribution $\mu_R\mu_F=m_Z$ (left) or
+$\mu_R\mu_F=\frac{m_Z+2m_b}{3}$ (right); in both cases the remaining
+contributions to the total cross sections are evaluated with
+$\mu_R\mu_F=m_Z$. The uncertainty band is obtained from seven-point
+scale variation.
+ Results are compared to the ATLAS measurement of
+Ref.~\cite{Aad:2016naf}. }
+  \end{center}
+\end{figure}
 %
+We can thus consider the total cross-section. We compute this 
+at NNLO in
+the 5FS, using the same code and settings discussed above, and then
+improve it by  subtracting
+the bottom-initiated contribution to it, namely, the cross-section for
+$Z$ production in bottom fusion, and  
+replacing it with its FONLL expression as defined and discussed
+above. Because both the total and the bottom-fusion cross-section are
+separately collinear safe, this leads to a consistent result.
+Results are shown in Fig.~\ref{fig:ztotal} for the rate into
+lepton pairs, obtained multiplying by the branching ratio B(Z$\to$ll)$=3.3658~10^{-2}\pm 0.0023~10^{-2}$~\cite{Tanabashi:2018oca}. The uncertainty shown is
+obtained from standard seven-point scale variation, with the central
+result given as the mid-point of the band.  The bottom fusion
+contribution is computed with either of the choices of scale that we
+used, with the total cross-section determined with $\mu_R=\mu_F=m_Z$. 
+At the level of total cross-section, the effect of the
+bottom mass is very minor, at the permille level, much smaller
+than the NNLO scale uncertainty. This justifies neglecting the further
+FONLL improvement of the light-quark induced bottom production
+copntribution, which at the level of total cross-section would be
+possible, but, as we have seen above, would have a yet much smaller
+impact. 
 
 In summary, we have determined the total cross-section for $Z$
 production in bottom quark fusion at the highest available accuracy in
-a matched FONLL scheme, and we have used our results as a test case for the
+a matched FONLL scheme,  and we have used our results as a test case for the
 discussion of issues of scale dependence and heavy quark treatment, by
 generalising our previous results for Higgs production, and studying
 not only renormalisation and factorisation scale, but also matching
-scale dependence. 
+scale dependence. We have finally assessed the impact of the FONLL
+improvement both on the bottom fusion and total $Z$ production
+cross-section. 
 
 Our main phenomenological conclusion is that,
-similarly to the case of Higgs production,  mass effects are small,
+similarly to the case of Higgs production,  mass effects on the bottom
+fusion cross-section are small,
 but non-negligible in comparison to the high experimental accuracy to
-which this process is measured. However, the contribution due to the
+which this process can be measured. However, their impact on the total $Z$
+cross-section is quite small, given that the bottom fusiom contribution
+is only a small fraction of the total.
+For bottom fusion, the contribution due to the
 resummation of collinear logs of the heavy quark is sizeable, thereby
 making a five-flavour scheme in which the $b$~quark is endowed with a PDF
 a better approximation to the full FONLL result than the fixed-order
 4FS calculation with massive b, which falls short of the full
 prediction and displays large scale uncertainties. 
-
 A low choice of
 renormalisation and factorisation scale reduces the scale dependence
 of both the full FONLL and pure 5FS result and is likely to improve
@@ -712,7 +903,10 @@ their accuracy, though in practice this makes little difference as the scale
 dependence of both these results is very slight. However, it
 does suggest that the hard physical scale for this process is
 lower than the final-state mass, as previously advocated.
-All in all, our results support the conclusion that a fully matched
+
+
+All in all, our results support the conclusion that, when dealing with
+processes involving heavy quarks, a fully matched
 treatment of heavy quarks with a proper inclusion of mass effects is
 necessary for LHC phenomenology at the percent level, either through
 its direct use, or as a guide to construct efficient and accurate
