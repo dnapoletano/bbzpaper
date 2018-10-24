@@ -230,7 +230,7 @@ in bottom fusion, defined as $Z$ production in the case in
 which the coupling of the $Z$ to all quarks but bottom vanishes. In
 this case, only the diagram shown on the left of
 Fig.~\ref{fig:fusvsfs} contributes (as for Higgs production). The
-second is $Z\bar b$ production, defined as the process with a $Z$ and a
+second is $Zb\bar b$ production, defined as the process with a $Z$ and a
 bottom quark-antiquark pair in the final state, in which case both
 diagrams in Fig.~\ref{fig:fusvsfs} contribute. In the sequel we will
 consistently refer to the first definition (the one which is similar
@@ -565,13 +565,13 @@ Coming now to these qualitative features we note that:
   become unreliable.
 \item A change of matching scale has essentially the same effect on
   the 5FS and the FONLL results, and it has the effect of moving both
-  towards the 45S, though by a moderate amount.
+  towards the 4FS, though by a moderate amount.
 \end{itemize}
 
 These qualitative features have a simple theoretical
 interpretation. To this purpose, note that the cross-section for
 this process contains collinear logarithms regulated by the heavy
-quark mass, i.e. powers of $\ln\frac{\mu_Z}{m_b^2}$, one at each
+quark mass, i.e. powers of $\ln\frac{\mu_Z^2}{m_b^2}$, one at each
 perturbative order. These logs  
 arise from a transverse
 momentum integration, whose the upper limit is the maximum value of the
@@ -699,15 +699,31 @@ that indeed this scale of the hard process, and it nicely explains the
 very weak factorization scale dependence also seen in the 5FS unless
 $\mu_F\lesssim0.2m_Z$ or so.
 
+%% %% Modified version
 Finally, the fact that when increasing the matching scale $\mu_b$ the
 5FS and FONLL-B result decrease and get closer to the 4FS is
-understood as a consequence of the fact that the resummed log becomes
-smaller: as the matching scale is raised and gets closer to
-the scale of the process the resummed logs become smaller, while the
-fixed order log and constant included in the matching condition remain
-the same. Since only these 
-fixed order contributions are  included in the 4FS, as $\mu_b$ is
-raised the 5FS gets closer to the 4FS.
+understood as a consequence two concurring causes.
+On the one hand, the resummed logarithms, $\ln\frac{\mu_F^2}{\mu_b^2}$
+become smaller as $\mu_b$ increases. On the other hand, the
+fixed-order logarithms, $\ln\frac{\mu_b^2}{m_b^2}$,
+which comes from the matching conditions, become larger. However,
+these two effects cancel out only at fixed-order. The remaining
+higher-order logarithms in the resummed calculation become smaller
+and are not matched by anything else, as the constant terms
+remain constant. As these higher-order are the principal cause
+of the difference between the 4FS and both the 5FS and the FONLL
+calculations, as they become smaller, the difference consequently reduces.
+
+%% %% Previous version
+%% Finally, the fact that when increasing the matching scale $\mu_b$ the
+%% 5FS and FONLL-B result decrease and get closer to the 4FS is
+%% understood as a consequence of the fact that the resummed log becomes
+%% smaller: as the matching scale is raised and gets closer to
+%% the scale of the process the resummed logs become smaller, while the
+%% fixed order log and constant included in the matching condition remain
+%% the same. Since only these 
+%% fixed order contributions are  included in the 4FS, as $\mu_b$ is
+%% raised the 5FS gets closer to the 4FS.
 
 We can finally discuss, in light of all this, the two related issues
 of choosing the various scales, $\mu_F$, $\mu_R$ and $\mu_b$, and of
@@ -794,9 +810,20 @@ cross-section, but without initial-state bottom in the 5FS,
 specifically at leading order the light-quark initiated contribution of
 Fig.~\ref{fig:fusvsfs}. Bottom mass effects in these contributions
 could in principle also be included in a
-matched scheme. However, the corresponding 4FS contributions are only
-known up to NLO, hence only an FONLL-A computation would be possible,
-instead of the more accurate FONLL-B. Furthermore, also as already
+matched scheme.
+However, in order to perform the matching needed for a FONLL-B
+calculation~($\mathcal{O}(\alpha_s^3)$), one would need the
+$\mathcal{O}(\alpha_s^3)$ contributions to the light-quark-light-quark
+matching conditions, which are not available
+\footnote{Although one would be able to perform a, less accurate, FONLL-A
+  calculation}.
+%
+%% Previous version
+%% However, the corresponding 4FS contributions are only
+%% known up to NLO, hence only an FONLL-A computation would be possible,
+%% instead of the more accurate FONLL-B.
+%
+Furthermore, also as already
 mentioned, a matched computation including these contributions must be
 performed at the level of the total $Z$ cross-section, rather than
 that for  the $Zb\bar b$ cross-section, because these real emission
@@ -815,19 +842,13 @@ contribution $\sigma^{\rm light}_{\rm 5FS}(Zb\bar b)=146.1$~pb from the diagram
 of Fig.~\ref{fig:fusvsfs} in the 5FS. The corresponding 4FS result is 
 $\sigma^{\rm light}_{\rm 4FS}(Zb\bar b)=129.5$~pb, while the massless
 limit of the 4FS result is $\sigma^{\rm light}_{\rm 0}(Zb\bar
-b)=146.1$~pb. It follows that the effect of the FONLL-B improvement
-over a pure 5FS computation of this term is at the level of less that
-1\% of the total cross section of Table~\ref{tab:res}, to be compared
-to the 5\%  impact of the FONLL-B improvement of the gluon fusion
-contribution seen in  Table~\ref{tab:res}. But the very
-definition of this contribution is subject to an ambiguity due to the
-need to introduce a cutoff, which is of the order of the difference
-between the whole contribution in the 5FS 
-and its massless limit, namely, also of
-the same size as the FONLL improvement. Therefore, its FONLL
-improvement appears unnecessary. 
-
-
+b)=138.8$~pb. It follows that the effect of the FONLL-B improvement
+over a pure 5FS computation of this term would be of the order of
+$\sim 6\%$, which, relative to the total $b\bar{b}$ cross section of
+Table~\ref{tab:res}, yields a $0.7\%$ modification,
+to be compared
+to the 5-6\%  impact of the FONLL-B improvement of the bottom fusion
+contribution. Therefore, its FONLL improvement appears unnecessary. 
 
 \begin{figure}
   \begin{center}
@@ -840,10 +861,10 @@ computed in a pure
 five-flavour scheme, or with the bottom fusion contribution replaced
 by its FONLL-B expression. Results are show for two different choices
 of the renormalization and factorization scale  for the bottom-induced
-contribution $\mu_R\mu_F=m_Z$ (left) or
-$\mu_R\mu_F=\frac{m_Z+2m_b}{3}$ (right); in both cases the remaining
+contribution $\mu_R=\mu_F=m_Z$ (left) or
+$\mu_R=\mu_F=\frac{m_Z+2m_b}{3}$ (right); in both cases the remaining
 contributions to the total cross sections are evaluated with
-$\mu_R\mu_F=m_Z$. The uncertainty band is obtained from seven-point
+$\mu_R=\mu_F=m_Z$. The uncertainty band is obtained from seven-point
 scale variation.
  Results are compared to the ATLAS measurement of
 Ref.~\cite{Aad:2016naf}. }
@@ -860,7 +881,9 @@ replacing it with its FONLL expression as defined and discussed
 above. Because both the total and the bottom-fusion cross-section are
 separately collinear safe, this leads to a consistent result.
 Results are shown in Fig.~\ref{fig:ztotal} for the rate into
-lepton pairs, obtained multiplying by the branching ratio B(Z$\to$ll)$=3.3658~10^{-2}\pm 0.0023~10^{-2}$~\cite{Tanabashi:2018oca}. The uncertainty shown is
+lepton pairs, obtained multiplying by the branching ratio
+B(Z$\to$ll)$=3.3658~10^{-2}\pm 0.0023~10^{-2}$~\cite{Tanabashi:2018oca}.
+The uncertainty shown is
 obtained from standard seven-point scale variation, with the central
 result given as the mid-point of the band.  The bottom fusion
 contribution is computed with either of the choices of scale that we
