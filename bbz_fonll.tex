@@ -965,7 +965,7 @@ STFC grant ST/L000385/1 and by the Royal Society grants RGF/EA/180148
   The massless limit of the 4F scheme coefficients, $B^{(0)}$, are, in this case, given by
   \begin{equation}
     \label{eq:massless_lim}
-    \sigma^{(4),(0)}\left(\alpha_s(Q^2),L\right)=\int_{\tau_H}^{1} \frac{dx}{x}\int_{\frac{\tau_H}{x}}^{1} \frac{dy}
+    \sigma^{(4),(0)}\left(\alpha_s(Q^2),L\right)=\tau_H\int_{\tau_H}^{1} \frac{dx}{x}\int_{\frac{\tau_H}{x}}^{1} \frac{dy}
           {y^2}\sum_{ij=q,g}f_{i}(x,Q^2)f_j\left(\frac{\tau_H}{x y},Q^2\right)B_{ij}^{(0)}\left(y,L,\alpha_s(Q^2)\right),
   \end{equation}
   with
@@ -974,12 +974,12 @@ STFC grant ST/L000385/1 and by the Royal Society grants RGF/EA/180148
   \end{equation}
   and
   \begin{align}
-    B_{gg}^{(0)(2)} (y,L) & = y\int_y^1\frac{dz}{z}\left[2\mathcal{A}_{gb}^{(1)}\left(z,L\right)\mathcal{A}_{gb}^{(1)}\left(\frac{y}{z},L\right) + 4\mathcal{A}_{gb}^{(1)}\left(\frac{y}{z},L\right)\hat{\sigma}_{gb}^{(1)}(z)\right] + \hat{\sigma}_{gg}^{(2)}(y), \\
+    B_{gg}^{(0)(2)} (y,L) & = y\int_y^1\frac{dz}{z}\left[2\mathcal{A}_{gb}^{(1)}\left(z,L\right)\mathcal{A}_{gb}^{(1)}\left(\frac{y}{z},L\right) + 4\mathcal{A}_{gb}^{(1)}\left(\frac{y}{z},L\right)\frac{1}{z}\hat{\sigma}_{gb}^{(1)}(z)\right] + \hat{\sigma}_{gg}^{(2)}(y), \\
     B_{q\bar{q}}^{(0)(2)} (y,L) &= \hat{\sigma}_{q\bar{q}}^{(2)}(y);
   \end{align}
   while the new contributions to  $\order{\alpha_s^3}$ are
   \begin{align}\label{eq:subtrexp}
-    B_{gg}^{(0)(3)} (y,L) & = y\int_y^1\frac{dz}{z}\left[4\mathcal{A}_{gb}^{(2)}\left(z,L\right)\mathcal{A}_{gb}^{(1)}\left(\frac{y}{z},L\right) + 2\mathcal{A}_{gb}^{(1)}\left(z,L\right)\mathcal{A}_{gb}^{(2)}\left(\frac{y}{z},L\right)\hat{\sigma}_{b\bar{b}}^{(1)}(z) \right.\nonumber \\
+    B_{gg}^{(0)(3)} (y,L) & = y\int_y^1\frac{dz}{z}\left[4\mathcal{A}_{gb}^{(2)}\left(z,L\right)\mathcal{A}_{gb}^{(1)}\left(\frac{y}{z},L\right) + 2\mathcal{A}_{gb}^{(1)}\left(z,L\right)\int_z^1\frac{dw}{w}\mathcal{A}_{gb}^{(2)}\left(\frac{y}{z},L\right)\frac{1}{w}\hat{\sigma}_{b\bar{b}}^{(1)}(z) \right.\nonumber \\
       & \left.\phantom{asdfdy\int_y^1\frac{dz}{z}4\mathcal{A}_{gb}^{(2)}\left(z,L\right)}+ 4\mathcal{A}_{gb}^{(2)}\left(\frac{y}{z},L\right)\hat{\sigma}_{gb}^{(1)}(z) + 4\mathcal{A}_{gb}^{(1)}\left(\frac{y}{z},L\right)\hat{\sigma}_{gb}^{(2)}(z)\right], \\
     B_{gq}^{(0)(3)} (y,L)  & =  y\int_y^1\frac{dz}{z}\left[2\mathcal{A}_{\Sigma b}^{(2)}\left(z,L\right)\mathcal{A}_{gb}^{(1)}\left(\frac{y}{z},L\right) + 2\mathcal{A}_{\Sigma b}^{(2)}\left(\frac{y}{z},L\right)\hat{\sigma}_{gb}^{(1)}(z) \right.\nonumber \\
       & \left.\phantom{asdfdy\int_y^1\frac{dz}{z}  4 \mathcal{A}_{gb}^{(2)}\left(z,L\right)\mathcal{A}_{gb}^{(1)}\left(\frac{y}{z},L\right)\mathcal{A}_{gb}^{(1)}\left(\frac{y}{z},L\right)}+ 2\mathcal{A}_{gb}^{(1)}\left(\frac{y}{z},L\right)\hat{\sigma}_{qb}^{(2)}(z)\right],
